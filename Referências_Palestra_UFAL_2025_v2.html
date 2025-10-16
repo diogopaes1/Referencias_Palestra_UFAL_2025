@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referências - Do Algoritmo à Colheita: A Nova Era da Agricultura Inteligente - COINTER PDVAGRO 2025</title>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Main Colors */
+            --color-primary: #2ecc71; /* Green */
+            --color-secondary: #3498db; /* Blue */
+            --color-accent: #e67e22; /* Orange */
+            --color-text-dark: #34495e;
+            --color-text-light: #ecf0f1;
+            --color-background: #fdfdfd;
+            --color-card-background: #ffffff;
+            --color-border: #e0e0e0;
+            --color-shadow: rgba(0, 0, 0, 0.08);
+
+            /* Badge Colors */
+            --badge-purple: #9b59b6;
+            --badge-orange: #e67e22;
+            --badge-teal: #1abc9c; /* Verde-água */
+            --badge-red: #e74c3c;
+
+            /* Additional Colors */
+            --color-light-gray: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-background);
+            color: var(--color-text-dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: var(--color-card-background);
+            border-radius: 12px;
+            box-shadow: 0 8px 16px var(--color-shadow);
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--color-border);
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            color: var(--color-secondary);
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header p {
+            margin: 5px 0;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        header .event-info {
+            font-size: 1em;
+            color: #777;
+            margin-top: 15px;
+            border-top: 1px dashed var(--color-border);
+            padding-top: 15px;
+        }
+
+        .stats-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+            padding: 20px;
+            background-color: var(--color-light-gray);
+            border-radius: 10px;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 15px;
+            background-color: var(--color-card-background);
+            border-radius: 8px;
+            border: 1px solid var(--color-border);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-item strong {
+            display: block;
+            font-size: 1.8em;
+            color: var(--color-accent);
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .stat-item span {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        h2 {
+            color: var(--color-primary);
+            font-size: 1.8em;
+            border-bottom: 2px solid var(--color-primary);
+            padding-bottom: 10px;
+            margin-top: 40px;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .category {
+            margin-bottom: 30px;
+        }
+
+        .category-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 15px;
+            color: var(--color-text-light);
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-left: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .badge-purple { background-color: var(--badge-purple); }
+        .badge-orange { background-color: var(--badge-orange); }
+        .badge-teal { background-color: var(--badge-teal); }
+        .badge-red { background-color: var(--badge-red); }
+
+        ol {
+            list-style: none;
+            padding: 0;
+            counter-reset: reference-counter;
+        }
+
+        ol li {
+            counter-increment: reference-counter;
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+            font-size: 1.05em;
+        }
+
+        ol li::before {
+            content: counter(reference-counter) ".";
+            color: var(--color-secondary);
+            font-weight: 700;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 25px;
+            text-align: right;
+        }
+
+        a {
+            color: var(--color-secondary);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--color-primary);
+            text-decoration: underline;
+        }
+
+        .additional-notes {
+            background-color: var(--color-light-gray);
+            border-left: 5px solid var(--color-primary);
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .additional-notes h3 {
+            color: var(--color-primary);
+            margin-top: 0;
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .additional-notes ul {
+            list-style: disc;
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .additional-notes li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            border-top: 2px solid var(--color-border);
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            .container {
+                margin: 20px;
+                padding: 15px;
+            }
+            .stats-box {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Do Algoritmo à Colheita: A Nova Era da Agricultura Inteligente</h1>
+            <p><strong>Palestrante:</strong> Diogo Paes da Costa, PhD</p>
+            <p><strong>Afiliações:</strong> Pesquisador - Universidade Federal do Agreste de Pernambuco | Sócio - Insygro C&T Agronômica</p>
+            <div class="event-info">
+                <p><strong>Evento:</strong> X Congresso Internacional das Ciências Agrárias - COINTER PDVAGRO 2025</p>
+                <p><strong>Local:</strong> Campus A.C. Simões - UFAL, Maceió, Alagoas</p>
+                <p><strong>Data:</strong> 17 de Outubro de 2025</p>
+            </div>
+        </header>
+
+        <h2>Estatísticas das Referências</h2>
+        <div class="stats-box">
+            <div class="stat-item">
+                <strong>19</strong>
+                <span>Referências Totais</span>
+            </div>
+            <div class="stat-item">
+                <strong>1</strong>
+                <span>Artigo Científico</span>
+            </div>
+            <div class="stat-item">
+                <strong>11</strong>
+                <span>Fontes Oficiais</span>
+            </div>
+            <div class="stat-item">
+                <strong>7</strong>
+                <span>Fontes Tecnológicas</span>
+            </div>
+        </div>
+
+        <h2>Referências Organizadas por Categoria</h2>
+
+        <div class="category">
+            <div class="category-title">
+                Artigos Científicos
+                <span class="badge badge-purple">1</span>
+            </div>
+            <ol>
+                <li>Costa, D.P., et al. (2024). Soil fertility impact on recruitment and diversity of the soil microbiome in sub-humid tropical pastures in Northeastern Brazil. <em>Scientific Reports</em>, 14, 3501. <a href="https://doi.org/10.1038/s41598-024-54221-7" target="_blank">https://doi.org/10.1038/s41598-024-54221-7</a></li>
+            </ol>
+        </div>
+
+        <div class="category">
+            <div class="category-title">
+                Dados Oficiais: Segurança Alimentar
+                <span class="badge badge-orange">2</span>
+            </div>
+            <ol start="2">
+                <li>FAO/ONU. (2025). O Estado da Segurança Alimentar e Nutricional no Mundo (SOFI 2025). <a href="https://www.fao.org/brasil/noticias/detail-events/en/c/1740911/" target="_blank">https://www.fao.org/brasil/noticias/detail-events/en/c/1740911/</a></li>
+                <li>Global Report on Food Crises 2025. Food Security Information Network (FSIN). <a href="https://ifz.org.br/global-report-on-food-crises-2025/" target="_blank">https://ifz.org.br/global-report-on-food-crises-2025/</a></li>
+            </ol>
+        </div>
+
+        <div class="category">
+            <div class="category-title">
+                Dados Oficiais: Agronegócio Brasileiro
+                <span class="badge badge-orange">3</span>
+            </div>
+            <ol start="4">
+                <li>CNA Brasil. (2024). PIB do Agronegócio - 4º Trimestre de 2024. <a href="https://www.cnabrasil.org.br/publicacoes/sumario-executivo-pib-do-agronegocio-4o-trimestre-de-2024" target="_blank">https://www.cnabrasil.org.br/publicacoes/sumario-executivo-pib-do-agronegocio-4o-trimestre-de-2024</a></li>
+                <li>IBGE/SIDRA. Levantamento Sistemático da Produção Agrícola (LSPA). <a href="https://sidra.ibge.gov.br/" target="_blank">https://sidra.ibge.gov.br/</a></li>
+                <li>MAPA/AGROFIT. Sistema de Agrotóxicos Fitossanitários. <a href="https://agrofit.agricultura.gov.br/" target="_blank">https://agrofit.agricultura.gov.br/</a></li>
+            </ol>
+        </div>
+
+        <div class="category">
+            <div class="category-title">
+                Dados Oficiais: Desertificação e Meio Ambiente
+                <span class="badge badge-orange">3</span>
+            </div>
+            <ol start="7">
+                <li>ONU Brasil. (2024). Desafiando a seca - Projeto REDESER/FAO. <a href="https://brasil.un.org/pt-br/299164-desafiando-seca" target="_blank">https://brasil.un.org/pt-br/299164-desafiando-seca</a></li>
+                <li>Poder360. (2024). Desertificação da caatinga reduz funcionalidade do solo. Estudo UFC/USP publicado na <em>Applied Soil Ecology</em>. <a href="https://www.poder360.com.br/meio-ambiente/desertificacao-da-caatinga-reduz-funcionalidade-do-solo/" target="_blank">https://www.poder360.com.br/meio-ambiente/desertificacao-da-caatinga-reduz-funcionalidade-do-solo/</a></li>
+                <li>Embrapa. (2024). Embrapa e ministérios somam esforços no combate à fome e à desertificação. <a href="https://www.embrapa.br/pt/busca-de-noticias/-/noticia/90189168/embrapa-e-ministros-somam-esforcos-no-combate-a-fome-e-a-desertificacao" target="_blank">https://www.embrapa.br/pt/busca-de-noticias/-/noticia/90189168/embrapa-e-ministros-somam-esforcos-no-combate-a-fome-e-a-desertificacao</a></li>
+            </ol>
+        </div>
+
+        <div class="category">
+            <div class="category-title">
+                Inteligência Artificial e Tecnologia no Agro
+                <span class="badge badge-teal">6</span>
+            </div>
+            <ol start="10">
+                <li>Embrapa. (2025). Inteligência Artificial impulsiona agronegócio brasileiro. <a href="https://agroemcampo.ig.com.br/2025/noticias/inteligencia-artificial-impulsiona-agronegocio-brasileiro/" target="_blank">https://agroemcampo.ig.com.br/2025/noticias/inteligencia-artificial-impulsiona-agronegocio-brasileiro/</a></li>
+                <li>UOL Economia. (2024). IA torna-se insumo essencial no agro. <a href="https://economia.uol.com.br/noticias/redacao/2024/06/07/ia-torna-se-insumo-essencial-e-gera-aumento-de-producao-e-sustentabilidade.htm" target="_blank">https://economia.uol.com.br/noticias/redacao/2024/06/07/ia-torna-se-insumo-essencial-e-gera-aumento-de-producao-e-sustentabilidade.htm</a></li>
+                <li>Valor Econômico. (2024). Inteligência artificial impulsiona redução de custos. <a href="https://valor.globo.com/publicacoes/especiais/agronegocio/noticia/2024/04/29/inteligencia-artificial-impulsiona-reducao-de-custos.ghtml" target="_blank">https://valor.globo.com/publicacoes/especiais/agronegocio/noticia/2024/04/29/inteligencia-artificial-impulsiona-reducao-de-custos.ghtml</a></li>
+                <li>Compre Rural. (2024). Drones impulsionam agricultura de precisão na Agrishow. <a href="https://www.comprerural.com/cada-vez-mais-adaptados-a-realidade-brasileira-drones-impulsionam-a-agricultura-de-precisao-na-30a-agrishow/" target="_blank">https://www.comprerural.com/cada-vez-mais-adaptados-a-realidade-brasileira-drones-impulsionam-a-agricultura-de-precisao-na-30a-agrishow/</a></li>
+                <li>Portal do Agronegócio. (2024). Agro 5.0: Inteligência artificial revoluciona o agronegócio brasileiro. <a href="https://www.portaldoagronegocio.com.br/tecnologia/conectividade-e-digital/noticias/agro-5-0-inteligencia-artificial-revoluciona-o-agronegocio-brasileiro" target="_blank">https://www.portaldoagronegocio.com.br/tecnologia/conectividade-e-digital/noticias/agro-5-0-inteligencia-artificial-revoluciona-o-agronegocio-brasileiro</a></li>
+                <li>AgroAdvance. (2024). Aplicações reais da Inteligência Artificial no Agro. <a href="https://agroadvance.com.br/blog-aplicacoes-reais-da-inteligencia-artificiall-no-agro/" target="_blank">https://agroadvance.com.br/blog-aplicacoes-reais-da-inteligencia-artificiall-no-agro/</a></li>
+            </ol>
+        </div>
+
+        <div class="category">
+            <div class="category-title">
+                Microbioma e Bioinformática
+                <span class="badge badge-teal">3</span>
+            </div>
+            <ol start="16">
+                <li>UTFPR. (2024). IA e aprendizado de máquina para mapeamento de carbono do solo. <a href="https://www.utfpr.edu.br/campus/doisvizinhos/inteligencia-artificial-e-aprendizado-de-maquina-sao-usados-para-o-mapeamento-de-carbono-do-solo-do-brasil" target="_blank">https://www.utfpr.edu.br/campus/doisvizinhos/inteligencia-artificial-e-aprendizado-de-maquina-sao-usados-para-o-mapeamento-de-carbono-do-solo-do-brasil</a></li>
+                <li>Embrapa. (2024). Sequenciamento do microbioma do solo pode prever doenças. <a href="https://www.embrapa.br/busca-de-noticias/-/noticia/100395254/sequenciamento-do-microbioma-do-solo-pode-prever-doencas-aumentar-a-produtividade-e-promover-a-sustentabilidade-agricola" target="_blank">https://www.embrapa.br/busca-de-noticias/-/noticia/100395254/sequenciamento-do-microbioma-do-solo-pode-prever-doencas-aumentar-a-produtividade-e-promover-a-sustentabilidade-agricola</a></li>
+                <li>AgroPlanning. (2024). Valorização do microbioma do solo: a aposta sustentável dos agricultores brasileiros. <a href="https://www.agroplanning.com.br/2024/11/06/valorizacao-do-microbioma-do-solo-a-aposta-sustentavel-dos-agricultores-brasileiros/" target="_blank">https://www.agroplanning.com.br/2024/11/06/valorizacao-do-microbioma-do-solo-a-aposta-sustentavel-dos-agricultores-brasileiros/</a></li>
+            </ol>
+        </div>
+
+        <div class="category">
+            <div class="category-title">
+                Institucional
+                <span class="badge badge-red">1</span>
+            </div>
+            <ol start="19">
+                <li>Insygro C&T Agronômica. (2024). Serviços e Projetos. <a href="https://insygro.com.br" target="_blank">https://insygro.com.br</a></li>
+            </ol>
+        </div>
+
+        <div class="additional-notes">
+            <h3>Notas Adicionais</h3>
+            <ul>
+                <li><strong>Bases de Dados:</strong> SILVA 138, NCBI, FAProTax, INMET</li>
+                <li><strong>Ferramentas:</strong> QIIME2, DADA2, MetaPhlAn, HUMAnN, Python, R</li>
+                <li><strong>Algoritmos ML:</strong> Random Forest, SVM, K-means, PCA, CCA, LDA, SparCC, Gradient Boosting, Redes Neurais</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Documento gerado para o X COINTER PDVAGRO 2025</p>
+        </footer>
+    </div>
+</body>
+</html>
